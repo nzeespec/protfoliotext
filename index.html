@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/skill.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+
+    <style>
+      body {
+        font-family: Quicksand, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="sidebar">
+      <i id="hamburger" class="fa-solid fa-bars sidebar_hamburger"></i>
+      <div class="sidebar_content">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="hero">
+      <h1>Hi! <br />I am Anjila Basnet <br /></h1>
+      <button>Contact at<i class="fa-solid fa-envelope"></i></button>
+    </section>
+
+    <section id="about" class="section">
+      <p class="section_title">about me</p>
+      <p class="section_subtitle">who am I?</p>
+    </section>
+
+    <p class="about_description">
+      <strong>Hi,I am Nzeela.</strong>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quas quia
+      quasi, dolores explicabo nulla libero, odit velit quis distinctio minus
+      earum adipisci? Voluptatem iusto temporibus cum amet mollitia natus, qui,
+      in, dicta deleniti exercitationem tenetur possimus praesentium ipsum.
+      Sapiente blanditiis harum ducimus voluptas ipsam eum veritatis natus
+      suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Quisquam est et, a eligendi, consequuntur nam sint fugiat quos voluptate
+      quia maxime totam aliquam libero iste, ea veritatis at quasi. Eveniet.
+    </p>
+
+    <div class="about_skills">
+      <div>
+        <i class="fa-solid fa-ear-listen"></i>
+        <h3>web development</h3>
+      </div>
+      <div>
+        <i class="fa-solid fa-globe"></i>
+        <h3>web designing</h3>
+      </div>
+      <div>
+        <i class="fa-solid fa-database"></i>
+        <h3>machine learning</h3>
+      </div>
+      <div>
+        <i class="fa-solid fa-mobile"></i>
+        <h3>mobile application</h3>
+      </div>
+    </div>
+
+    <section id="skills">
+      <p class="section_title">my specialty</p>
+      <p class="section_subtitle">my skills</p>
+
+      <div class="outer_box">
+        <div class="skill_box">
+          <p>HTML</p>
+          <div class="skill_grey_box">
+            <div class="skill_color_box">
+              <span>88%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill_box">
+          <p>singing</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box"
+              style="width: 8%; color: purple; background: purple"
+            >
+              <span>8%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill_box">
+          <p>Dance</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box"
+              style="width: 75%; color: orangered; background: orangered"
+            >
+              <span>75%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill_box">
+          <p>blabla</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box"
+              style="width: 25%; color: cyan; background: cyan"
+            >
+              <span>25%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill_box">
+          <p>humor</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box"
+              style="width: 100%; color: forestgreen; background: forestgreen"
+            >
+              <span>100%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill_box">
+          <p>Yap</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box"
+              style="width: 50%; color: plum; background: plum"
+            >
+              <span>50%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const hamburger = document.querySelector("#hamburger");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("sidebar_hamburger_translate");
+      });
+    </script>
+  </body>
+</html>
