@@ -6,8 +6,8 @@ html {
 }
 body {
   font-family: Quicksand, sans-serif;
-  margin: 0;
-  background-color: rgba(239, 203, 225, 0.655);
+  margin: unset;
+  background-color: #fff4f6;
 }
 a {
   text-decoration: none;
