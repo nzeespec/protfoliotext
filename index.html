@@ -35,13 +35,36 @@
   </head>
   <body>
     <nav class="sidebar">
-      <i id="hamburger" class="fa-solid fa-bars sidebar_hamburger"></i>
-      <div class="sidebar_content">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
+      <i id="hamburger" class="fa-solid fa-bars sidebar__hamburger"></i>
+
+      <div class="sidebar__content">
+        <img
+          class="sidebar__image"
+          src="images/profile.png"
+          alt="Profile Image"
+        />
+        <h1 class="sidebar__name">Anjila Basnet</h1>
+        <h2 class="sidebar__job">Developer <span>in Nepal</span></h2>
+
+        <ul class="sidebar__list">
+          <li class="sidebar__list__item">
+            <a href="#hero">home</a>
+          </li>
+          <li class="sidebar__list__item">
+            <a href="#about">about</a>
+          </li>
+          <li class="sidebar__list__item">
+            <a href="#skills">skills</a>
+          </li>
+          <li class="sidebar__list__item">
+            <a href="#contact">contact</a>
+          </li>
         </ul>
+
+        <p class="sidebar__copyright">
+          &copy; 2024 All rights reserved | Made with &#128150; by
+          <span>Anjila</span>
+        </p>
       </div>
     </nav>
     <section id="hero">
@@ -161,9 +184,9 @@
     </section>
 
     <script>
-      const hamburger = document.querySelector("#hamburger");
+      const hamburger = document.getElementById("hamburger");
       hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("sidebar_hamburger_translate");
+        hamburger.classList.toggle("sidebar__hamburger__translate");
       });
     </script>
   </body>
