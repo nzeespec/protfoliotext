@@ -1,15 +1,103 @@
-.about_description {
-  color: rgba(0, 0, 0, 0.7);
-  margin-bottom: 40px;
+.about__description {
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
   line-height: 1.8;
-}
-.about_skills > div {
-  margin-bottom: 50px;
-  border-bottom: 2px solid blue;
-  padding: 24px;
-  color: blue;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
+.about__description:last-of-type {
+  margin-bottom: 40px;
+}
+
+.about__box {
+  color: #080808;
+  border-bottom: 2px solid #152b5e;
+  padding: 24px;
+  box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  margin-bottom: 50px;
+}
+
+.about__box > i {
+  margin-bottom: 20px;
+  color: #152b5e;
+  font-size: 30px;
+}
+
+.about__box > h3 {
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.about__box:nth-child(2) {
+  border-color: #27468e;
+}
+
+.about__box:nth-child(2) > i {
+  color: #2751b3;
+}
+
+.about__box:nth-child(3) {
+  border-color: #030e6f;
+}
+
+.about__box:nth-child(3) > i {
+  color: #030e6f;
+}
+
+.about__box:last-child {
+  border-color: #1039b2;
+}
+
+.about__box:last-child > i {
+  color: #1039b2;
+}
+
+.about__box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(1, 37, 66, 0.35);
+}
+
+.about__happy {
+  padding: 30px;
+  background: #031e5a;
+}
+
+.about__happy > h2 {
+  font-family: "Playfair Display", serif;
+  color: rgb(247, 245, 245);
+  font-weight: normal;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  font-size: 30px;
+}
+
+.about__happy > button {
+  background: linear-gradient(135deg, #1789e7, #1a5087);
+  color: #fff;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.about__happy > button :hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(226, 227, 227, 0.35);
+}
+
+/* ....... */
+/* ....... */
 @media screen and (min-width: 768px) {
   .about__skills {
     display: flex;
@@ -19,27 +107,4 @@
   .about__box {
     flex-grow: 1;
   }
-}
-.about_skills > div:nth-child(2) {
-  border-bottom: 2px solid red;
-  color: red;
-}
-.about_skills > div:nth-child(3) {
-  border-bottom: 2px solid green;
-  color: green;
-}
-.about_skills > div:nth-child(4) {
-  border-bottom: 2px solid purple;
-  color: purple;
-}
-
-.about_skills i {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-.about_skills h3 {
-  font-weight: 500;
-  margin-bottom: 30 px;
-  text-transform: capitalize;
-  color: black;
 }

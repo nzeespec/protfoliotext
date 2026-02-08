@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/skill.css" />
     <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/contact.css" />
 
     <style>
       body {
@@ -57,7 +58,7 @@
             <a href="#skills">skills</a>
           </li>
           <li class="sidebar__list__item">
-            <a href="#contact">contact</a>
+            <a href="#contactForm">contact</a>
           </li>
         </ul>
 
@@ -78,39 +79,46 @@
     <section id="about" class="section">
       <p class="section_title">about me</p>
       <p class="section_subtitle">who am I?</p>
+
+      <p class="about_description">
+        <strong
+          >Hi,I am Nzeela Basnet.I am an Electronics, Communication, and
+          Information Engineering student with a strong focus on web
+          development. I have hands-on experience with HTML, CSS, JavaScript,
+          and modern web frameworks, and a solid understanding of programming
+          fundamentals, data flow, and system-level thinking. With an
+          engineering background in logic, networking concepts, and
+          problem-solving, I aim to build scalable, efficient, and user-centric
+          web applications while continuously exploring new
+          technologies.</strong
+        >
+      </p>
+      <br /><br />
+
+      <div class="about__skills">
+        <div class="about__box">
+          <i class="fa-solid fa-ear-listen"></i>
+          <h3>Graphic design</h3>
+        </div>
+        <div class="about__box">
+          <i class="fa-solid fa-globe"></i>
+          <h3>web design</h3>
+        </div>
+        <div class="about__box">
+          <i class="fa-solid fa-database"></i>
+          <h3>Software</h3>
+        </div>
+        <div class="about__box">
+          <i class="fa-solid fa-mobile"></i>
+          <h3>application</h3>
+        </div>
+      </div>
+
+      <div class="about__happy">
+        <h2>I am happy to know you that 300+ projects done successfully!</h2>
+        <button>hire me</button>
+      </div>
     </section>
-
-    <p class="about_description">
-      <strong
-        >Hi,I am Nzeela Basnet.I am an Electronics, Communication, and
-        Information Engineering student with a strong focus on web development.
-        I have hands-on experience with HTML, CSS, JavaScript, and modern web
-        frameworks, and a solid understanding of programming fundamentals, data
-        flow, and system-level thinking. With an engineering background in
-        logic, networking concepts, and problem-solving, I aim to build
-        scalable, efficient, and user-centric web applications while
-        continuously exploring new technologies.</strong
-      >
-    </p>
-
-    <div class="about_skills">
-      <div>
-        <i class="fa-solid fa-ear-listen"></i>
-        <h3>web development</h3>
-      </div>
-      <div>
-        <i class="fa-solid fa-globe"></i>
-        <h3>web designing</h3>
-      </div>
-      <div>
-        <i class="fa-solid fa-database"></i>
-        <h3>machine learning</h3>
-      </div>
-      <div>
-        <i class="fa-solid fa-mobile"></i>
-        <h3>mobile application</h3>
-      </div>
-    </div>
 
     <section id="skills">
       <p class="section_title">my specialty</p>
@@ -180,6 +188,19 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contactForm">
+      <div class="contact-card">
+        <h4 class="subtitle">GET IN TOUCH</h4>
+        <h2 class="title">CONTACT</h2>
+
+        <form class="contact_form" action="" onsubmit="submitForm(event)">
+          <input class="contact_input" type="text" placeholder="Name" />
+          <textarea class="contact_textarea" placeholder="Message"></textarea>
+          <button class="contact_button">Send Message</button>
+        </form>
       </div>
     </section>
 
